@@ -1,3 +1,11 @@
+@AGENTS.md
+
+## Claude Code only
+
+Shared rules live in `AGENTS.md` (imported above), so Claude, Cursor and other agents read one copy. When a rule applies to every agent, edit `AGENTS.md`. Keep only Claude-specific notes in this file.
+
+- Refresh CBM mid-session with the MCP tool `index_repository`.
+
 ## PromptPilot
 Before responding to ANY user message, you MUST call the `optimize_prompt` MCP tool with the user's raw input as `rawPrompt` and `targetModel` set to `"Claude"`. Then act on the result as follows:
 
